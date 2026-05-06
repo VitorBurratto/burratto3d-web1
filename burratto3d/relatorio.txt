@@ -1,0 +1,10 @@
+    Esse projeto foi criado com o objetivo de facilitar empresas que operam no mercado de impressão 3D,
+oferecendo uma calculadora de precificação para venda, controle financeiro e controle de estoque. 
+O desenvolvimento web desse sistema começou com a intenção de ajudar a minha própria empresa, a 'Burratto 3D',
+pois percebi uma carência de ferramentas específicas para esse ramo.
+
+    Nesta primeira etapa, o foco foi estruturar o visual e a interatividade da plataforma utilizando HTML, 
+CSS e JavaScript. Criei a tela de login, o dashboard principal e as páginas de controle. O JavaScript já 
+está rodando de forma local para realizar os cálculos da precificação de peças e adicionar dados de forma 
+interativa nas tabelas de estoque e finanças. O código fonte está organizado e pronto para ser versionado 
+no repositório público.

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Faturamento - Burratto 3D</title>
+    <link rel="stylesheet" href="burratto3d.css" />
+  </head>
+  <body>
+    <div id="app-container">
+      <nav class="sidebar">
+        <h2>Burratto 3D</h2>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="estoque.html">Estoque</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="gastosdaempresa.html">Gastos</a></li>
+          <li><a href="faturamento.html">Faturamento</a></li>
+          <li><a href="login.html" class="logout-btn">Sair</a></li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <h1>Faturamento Mensal</h1>
+        <div class="card">
+          <form id="form-faturamento" class="data-entry">
+            <div class="field">
+              <label for="faturamento-mes">Mês</label>
+              <input
+                id="faturamento-mes"
+                type="text"
+                placeholder="Ex: 05/26"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="faturamento-valor">Faturamento (R$)</label>
+              <input
+                id="faturamento-valor"
+                type="text"
+                placeholder="Ex: 1.480,32"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="faturamento-caixa">Caixa (R$)</label>
+              <input
+                id="faturamento-caixa"
+                type="text"
+                placeholder="Ex: 642,46"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-inline">Adicionar</button>
+          </form>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Mês</th>
+                <th>Faturamento</th>
+                <th>Caixa</th>
+              </tr>
+            </thead>
+            <tbody id="faturamento-table-body">
+              <tr>
+                <td>03/26</td>
+                <td>R$ 743,00</td>
+                <td>R$ 322,46</td>
+              </tr>
+              <tr>
+                <td>04/26</td>
+                <td>R$ 1.480,32</td>
+                <td>R$ 642,46</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="totals">
+            Total faturamento: <span id="total-faturamento">R$ 0,00</span>
+            <span class="totals-divider">|</span>
+            Total caixa: <span id="total-caixa">R$ 0,00</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="burratto.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora - Burratto 3D</title>
+    <link rel="stylesheet" href="burratto3d.css" />
+  </head>
+  <body>
+    <div id="app-container">
+      <nav class="sidebar">
+        <h2>Burratto 3D</h2>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="estoque.html">Estoque</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="gastosdaempresa.html">Gastos</a></li>
+          <li><a href="faturamento.html">Faturamento</a></li>
+          <li><a href="login.html" class="logout-btn">Sair</a></li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <h1>Calculadora de Preços</h1>
+        <div class="card form-precificacao">
+          <form onsubmit="calcularPreco(event)">
+            <div class="input-group">
+              <label>Custo de Material (R$):</label>
+              <input type="number" id="custo-mat" step="0.01" required />
+            </div>
+            <div class="input-group">
+              <label>Depreciação (R$):</label>
+              <input type="number" id="depre-imp" step="0.01" required />
+            </div>
+            <div class="input-group">
+              <label>Horas Trab. (R$):</label>
+              <input type="number" id="custo-hora" step="0.01" required />
+            </div>
+            <button type="submit" class="btn">Calcular</button>
+          </form>
+
+          <div id="resultado-preco" class="resultado"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="burratto.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Estoque - Burratto 3D</title>
+    <link rel="stylesheet" href="burratto3d.css" />
+  </head>
+  <body>
+    <div id="app-container">
+      <nav class="sidebar">
+        <h2>Burratto 3D</h2>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="estoque.html">Estoque</a></li>
+          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="gastosdaempresa.html">Gastos</a></li>
+          <li><a href="faturamento.html">Faturamento</a></li>
+          <li><a href="login.html" class="logout-btn">Sair</a></li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <h1>Estoque e Equipamentos</h1>
+        <div class="card">
+          <form id="form-estoque" class="data-entry">
+            <div class="field">
+              <label for="estoque-item">Item</label>
+              <input
+                id="estoque-item"
+                type="text"
+                placeholder="Ex: Filamento PLA"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="estoque-valor">Valor (R$)</label>
+              <input
+                id="estoque-valor"
+                type="text"
+                placeholder="Ex: 150,00"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-inline">Adicionar</button>
+          </form>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody id="estoque-table-body">
+              <tr>
+                <td>Bambu Lab A1</td>
+                <td>R$ 6.000,00</td>
+              </tr>
+              <tr>
+                <td>Filamentos PLA</td>
+                <td>R$ 150,00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="totals">
+            Total do estoque: <span id="total-estoque">R$ 0,00</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="burratto.js"></script>
+  </body>
+</html>

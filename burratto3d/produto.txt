@@ -1,0 +1,4 @@
+    Esse projeto foi criado com o objetivo para facilitar empresas que operam no mercado de impressão 3D,
+por meio de uma calculadora de precificação para venda, controle financeiro da empresa e controle de estoque,
+o desenvolvimento web desse aplicativo foi criado com a intenção de facilitar a minha empresa 'Burratto 3D',
+o qual eu percebi uma carência para esse ramo empresarial de impressão 3D
